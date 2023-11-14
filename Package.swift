@@ -81,6 +81,7 @@ let package = Package(
         .define("GID_SDK_VERSION", to: googleSignInVersion),
       ],
       linkerSettings: [
+        .linkedFramework("AppAuthCore"),
         .linkedFramework("CoreGraphics"),
         .linkedFramework("CoreText"),
         .linkedFramework("Foundation"),
